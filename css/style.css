@@ -1,0 +1,92 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+  height: 500px;
+  padding-top: 60px;
+}
+
+html {
+  background: rgb(18, 18, 18);
+}
+
+h2, p {
+  color: rgb(240, 240, 255);
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(240, 240, 255);
+  margin: auto;
+  text-align: center;
+  padding: 50px 0;
+}
+
+h3 {
+  color: rgb(240, 240, 255);
+  margin: auto;
+  text-align: center;
+  padding-bottom: 80px;
+  width: 70%;
+}
+button {
+  background: rgb(240, 240, 255);
+  color: rgb(18, 18, 18);
+  margin: auto;
+}
+
+.intro ul {
+  list-style: none;
+  color: white;
+  padding: 10px 0 0 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li:last-child {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.intro {
+  /* border: 1px solid lime; */
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.interact {
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  height: 500px;
+  width: 50%;
+  padding-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
