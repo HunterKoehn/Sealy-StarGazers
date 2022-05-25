@@ -1,5 +1,4 @@
 document.querySelector('button').addEventListener('click', getFetch)
-document.querySelector('starBtn').addEventListener('click', popUp)
 
 function getFetch() {
   const choice = document.querySelector('input').value
@@ -25,8 +24,5 @@ function getFetch() {
       });
 }
 
-//todo: create the popUp function
-function popUp() {
-
-}
+//todo: create function to save whatever image is currently being shown to the user.
   
