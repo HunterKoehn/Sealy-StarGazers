@@ -11,10 +11,14 @@ function getFetch() {
       .then(data => {
         console.log(data)
         if( data.media_type === 'image' ){
-          document.querySelector('img').src = data.hdurl
+          document.querySelector('img').src = data.hdurl;
+          document.getElementById("pho").style.display = "block";
+          document.getElementById("fram").style.display = "none";
         }
         else if(data.media_type === 'video'){
-          document.querySelector('iframe').src = data.url
+          document.querySelector('iframe').src = data.url;
+          document.getElementById("fram").style.display = "block";
+          document.getElementById("pho").style.display = "none";
         }
        
         document.querySelector('h3').innerText = data.explanation
@@ -25,4 +29,14 @@ function getFetch() {
 }
 
 //todo: create function to save whatever image is currently being shown to the user.
+
+
+//code here
+
+// mediaDL = document.getElementById('downloadBtn')
+
+// mediaDL.addEventListener('click', function getMedia () { 
   
+//   localStorage.setItem('media', document.querySelector('img').src);
+//   localStorage.getItem('media');
+// });
