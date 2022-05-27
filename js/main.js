@@ -10,11 +10,13 @@ function getFetch() {
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)
+        // presenting the data if the data is a photo and hiding any and all videos
         if( data.media_type === 'image' ){
           document.querySelector('img').src = data.hdurl;
           document.getElementById("pho").style.display = "block";
           document.getElementById("fram").style.display = "none";
         }
+        // presenting the data if the data is a video and hiding any and all photos
         else if(data.media_type === 'video'){
           document.querySelector('iframe').src = data.url;
           document.getElementById("fram").style.display = "block";
